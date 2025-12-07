@@ -5,6 +5,8 @@ algorithm that many PSA ECUs use to derive an unlock key (response) from a 4-byt
 seed (challenge) and a 2-byte PIN (application key). The goal is to make the
 math easy to audit, easy to reuse, and easy to package for desktops or scripts.
 
+Original work is from: https://github.com/ludwig-v/psa-seedkey-algorithm?tab=readme-ov-file
+
 ## Project layout
 
 - `psa_seed.py` – core algorithm (`transform`, `compute_response`) with strict
@@ -94,3 +96,4 @@ The Python port was authored here so that more tooling (CLI, GUI, web services)
 can rely on a single, well-commented implementation.
 
 Happy hacking!
+
